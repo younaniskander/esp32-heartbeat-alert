@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Bluetooth, BluetoothOff, Droplets, Thermometer, CloudRain, FlaskConical, Waves, Power, AlertTriangle } from "lucide-react";
+import { Bluetooth, BluetoothOff, Droplets, Thermometer, CloudRain, FlaskConical, Waves, Power, AlertTriangle, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
@@ -152,6 +152,11 @@ export default function Dashboard() {
                 <BluetoothOff className="h-4 w-4" /> قطع الاتصال
               </Button>
             )}
+            <a href="/arduino/smart_irrigation_ble.ino" download>
+              <Button variant="secondary" className="gap-2">
+                <Download className="h-4 w-4" /> تحميل كود ESP32
+              </Button>
+            </a>
           </div>
         </div>
       </header>
